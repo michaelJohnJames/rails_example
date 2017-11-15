@@ -1,0 +1,11 @@
+<h1><%= @employee.name %></h1>
+<p>Title: <%= @employee.title %></p>
+
+<div>
+  <%= link_to "Delete", employee_path(@employee), method: "delete", local: true %>
+
+  <%= link_to "Edit", edit_employee_path(@employee) %>
+</div>
+
+
+<%= link_to 'Back', employees_path %>
